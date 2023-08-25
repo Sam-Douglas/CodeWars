@@ -18,7 +18,7 @@ def __iterate_right(snail_map, result):
     return snail_map, result
 
 def __iterate_down(snail_map, result):
-    for i, item in enumerate(copy.deepcopy(snail_map)):
+    for i, item in enumerate(snail_map):
         result.append(item[-1])
         del snail_map[i][-1]
     return snail_map, result
@@ -30,7 +30,7 @@ def __iterate_left(snail_map, result):
     return snail_map, result
 
 def __iterate_up(snail_map, result):
-    for i, item in reversed(list(enumerate(copy.deepcopy(snail_map)))): # list is used as you cannot call reveresed on an enumerate object
+    for i, item in reversed(list(enumerate(snail_map))): # list is used as you cannot call reveresed on an enumerate object
         result.append(item[0])
         del snail_map[i][0]
     return snail_map, result
