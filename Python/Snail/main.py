@@ -9,7 +9,8 @@ def main():
              [16, 17, 18, 19, 20, 7],
              [15, 24, 23, 22, 21, 8],
              [14, 13, 12, 11, 10, 9]]
-    snail_sort(array)
+    print(array)
+    print(snail_sort(array))
 
 
 if __name__ == "__main__":

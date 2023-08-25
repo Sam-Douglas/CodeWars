@@ -3,17 +3,13 @@ import copy
 
 def snail_sort(snail_map: List[int]):
     result = []
-    print(snail_map)
-    number_of_values = sum(len(x) for x in snail_map)
     snail_functions = (__iterate_right, __iterate_down, __iterate_left, __iterate_up)
     while len(snail_map) != 0:
         for function in snail_functions:
             snail_map, result = function(snail_map, result)
             if len(snail_map) == 0:
                 break
-    print(result)
-    print(snail_map)
-    pass
+    return result
 
 def __iterate_right(snail_map, result):
     for item in snail_map[0]:
