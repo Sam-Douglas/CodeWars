@@ -1,13 +1,13 @@
 from typing import List
 import copy
 
-def snail_sort(snail_map: List[int]):
+def snail_sort(snail_map: List[int]) -> List[int]:
     result = []
     snail_functions = (__iterate_right, __iterate_down, __iterate_left, __iterate_up)
-    while len(snail_map) != 0:
+    while snail_map:
         for function in snail_functions:
             snail_map, result = function(snail_map, result)
-            if len(snail_map) == 0:
+            if not snail_map:
                 break
     return result
 
