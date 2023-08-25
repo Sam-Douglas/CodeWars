@@ -12,5 +12,13 @@
       "console": "integratedTerminal",
       "justMyCode": true
     },
+    {
+      "name": "Python: SnailSort",
+      "type": "python",
+      "request": "launch",
+      "program": "Python/Snail/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
   ]
 }
