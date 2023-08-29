@@ -1,7 +1,7 @@
-from typing import List
+from typing import Set
 
 # Implementation of Non-Recursive Heap's Algorithm from https://en.wikipedia.org/wiki/Heap%27s_algorithm
-def CalculatePermutations(inputString: str) -> List[str]:
+def CalculatePermutations(inputString: str) -> Set[str]:
     A = list(inputString)
     Permutations = {inputString}
     n = len(inputString)
