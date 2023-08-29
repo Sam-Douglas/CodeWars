@@ -1,5 +1,4 @@
 from typing import List
-import copy
 
 def snail_sort(snail_map: List[int]) -> List[int]:
     result = []
